@@ -14,7 +14,8 @@ SOURCES += main.cpp
 
 INCLUDEPATH += /usr/local/include/
 LIBS += -lopencv_video -lopencv_flann -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
-
+LIBS += -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lboost_date_time -lboost_log -lboost_log_setup
+LIBS += -L/usr/lib/x86_64-linux-gnu -ljsoncpp -lcurl
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
